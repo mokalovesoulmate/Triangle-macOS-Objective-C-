@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "Renderer.h"
 #import <MetalKit/MetalKit.h>
 
 @interface ViewController ()
