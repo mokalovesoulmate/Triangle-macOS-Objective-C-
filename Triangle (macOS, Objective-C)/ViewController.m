@@ -6,21 +6,25 @@
 //
 
 #import "ViewController.h"
+#import <MetalKit/MetalKit.h>
+
+@interface ViewController ()
+@property (strong) Renderer *renderer;
+@property (strong) MTKView *metalView;
+@end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    // Do any additional setup after loading the view.
+    self.metalView = [[MTKView alloc] initWithFrame:self.view.bounds];
+    self.metalView.autoresizingMask = NSViewWidthSizable | NSViewHeightSizable;
+    self.metalView.device = MTLCreateSystemDefaultDevice();
+
+    [self.view addSubview:self.metalView];
+
+    self.renderer = [[Renderer alloc] initWithView:self.metalView];
 }
-
-
-- (void)setRepresentedObject:(id)representedObject {
-    [super setRepresentedObject:representedObject];
-
-    // Update the view, if already loaded.
-}
-
 
 @end

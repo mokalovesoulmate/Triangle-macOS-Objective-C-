@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0EEE180F2CCD2A3B0074B057 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EEE180D2CCD2A3B0074B057 /* Metal.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		0EEE17EF2CCD2A270074B057 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,8 @@
 		0EEE17D92CCD2A250074B057 /* Triangle (macOS, Objective-C).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Triangle (macOS, Objective-C).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EEE17EE2CCD2A270074B057 /* Triangle (macOS, Objective-C)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Triangle (macOS, Objective-C)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EEE17F82CCD2A270074B057 /* Triangle (macOS, Objective-C)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Triangle (macOS, Objective-C)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EEE180C2CCD2A3B0074B057 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		0EEE180D2CCD2A3B0074B057 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EEE180F2CCD2A3B0074B057 /* Metal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,7 @@
 				0EEE17DB2CCD2A250074B057 /* Triangle (macOS, Objective-C) */,
 				0EEE17F12CCD2A270074B057 /* Triangle (macOS, Objective-C)Tests */,
 				0EEE17FB2CCD2A270074B057 /* Triangle (macOS, Objective-C)UITests */,
+				0EEE180B2CCD2A3B0074B057 /* Frameworks */,
 				0EEE17DA2CCD2A250074B057 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +98,15 @@
 				0EEE17F82CCD2A270074B057 /* Triangle (macOS, Objective-C)UITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		0EEE180B2CCD2A3B0074B057 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EEE180D2CCD2A3B0074B057 /* Metal.framework */,
+				0EEE180C2CCD2A3B0074B057 /* MetalKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
